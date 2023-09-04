@@ -2,7 +2,7 @@ import Express from "express";
 import mongoose from "mongoose";
 import routes from "./routes/routes.js";
 mongoose.connect(
-    "mongodb+srv://admin:capivaranegra123@curso-elaborata.fyu2nwf.mongodb.net/my_portifólio"
+    "mongodb+srv://admin:capivaranegra123@curso-elaborata.fyu2nwf.mongodb.net/TESTE-TESTE"
 );
 
 const app = Express();

@@ -1,14 +1,15 @@
 import mongoose from "mongoose";
-// mongoose.connect(
-//     "mongodb+srv://admin:capivaranegra123@curso-elaborata.fyu2nwf.mongodb.net/TESTE-TESTE"
-// );
+mongoose.connect(
+    "mongodb+srv://admin:capivaranegra123@curso-elaborata.fyu2nwf.mongodb.net/TESTE-TESTE"
+);
 
 const postSchema = new mongoose.Schema({
     title: String,
     description: String,
-    categories: mongoose.Schema.Types.ObjectId
+    // categories: mongoose.Schema.Types.ObjectId
+    categories: String
 });
 
-const Post = mongoose.model("Post", postSchema);
+const PostModel = mongoose.model("Post", postSchema);
 
-export default postSchema
+export default PostModel
