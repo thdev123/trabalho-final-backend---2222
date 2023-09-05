@@ -8,13 +8,13 @@ dotenv.config();
 mongoose.connect(process.env.URI_MONGO);
 
 
-const postSchema = new mongoose.Schema({
+const workSchema = new mongoose.Schema({
     title: String,
     description: String,
     // categories: mongoose.Schema.Types.ObjectId
     categories: String
 });
 
-const PostModel = mongoose.model("Post", postSchema);
+const workModel = mongoose.model("Work", workSchema);
 
-export default PostModel
+export default workModel
